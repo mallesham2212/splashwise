@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>splashwiseglobalsolutions</title>
+    <link
+      rel="stylesheet"
+      id="bootstrap-css"
+      href="css/bootstrap.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="awesome-font-css"
+      href="css/font-awesome.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="ionicon-font-css"
+      href="css/ionicon.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="royal-preload-css"
+      href="css/royal-preload.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="slick-slider-css"
+      href="css/slick.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="slick-theme-css"
+      href="css/slick-theme.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="consultax-style-css"
+      href="style.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <style>
+      .accordion {
+        width: 90%;
+        max-width: 1000px;
+        margin: 2rem auto;
+      }
+
+      .accordion-item {
+        background-color: #fff;
+        color: #111;
+        margin: 1rem 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      .accordion-item-header {
+        padding: 0.5rem 3rem 0.5rem 1rem;
+        min-height: 3.5rem;
+        line-height: 35px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .accordion-item-header::after {
+        content: "\002B";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+      }
+
+      .accordion-item-header.active::after {
+        content: "\2212";
+      }
+
+      .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      .accordion-item-body-content {
+        padding: 1rem;
+
+        border-top: 3px solid;
+        border-image: linear-gradient(
+            to right,
+            transparent,
+            #cd7329,
+            transparent
+          )
+          1;
+      }
+
+      @media (max-width: 767px) {
+        html {
+          font-size: 14px;
+        }
+      }
+      h1 {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+      }
+    </style>
+  </head>
+  <body class="royal_preloader">
+    <div id="page" class="site">
+      <header
+        id="site-header"
+        class="site-header mobile-header-blue header-style-1"
+      >
+        <div class="sticky-navbar">
+          <div
+            id="header_topbar"
+            class="header-topbar md-hidden sm-hidden clearfix"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- social icons -->
+                  <ul class="social-list fleft">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.facebook.com/people/Splashwiseglobalsolutions/100082090772744/#"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/splashwise-global-solutions-721b82229/"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/splashwiseglobalsolutions/"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <!-- social icons close -->
+                  <div class="topbar-text fright">
+                    Opening Hours : Monday to Friday - 8pm to 6:30am
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Top bar close -->
+
+          <!-- Main header start -->
+          <div class="main-header md-hidden sm-hidden">
+            <div class="main-header-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-wrap-table">
+                      <div
+                        style="width: 231px; height: 47px"
+                        id="site-logo"
+                        class="site-logo col-media-left col-media-middle"
+                      >
+                        <a href="index.html">
+                          <img
+                            class="logo-static"
+                            src="images/logo_2_org.jpeg"
+                            alt="SPLASH WISE"
+                          />
+                          <img
+                            class="logo-scroll"
+                            src="images/logo-white.svg"
+                            alt="SPLASH WISE"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-media-body col-media-middle">
+                        <!-- contact info -->
+                        <ul class="info-list info_on_right_side fright">
+                          <li>
+                            <span
+                              >Email us: <br /><a
+                                href="mailto:support@splashwiseglobalsolutions.com"
+                                class="email-link"
+                                ><strong
+                                  >support@splashwiseglobalsolutions.com</strong
+                                ></a
+                              ></span
+                            >
+                          </li>
+                          <li>
+                            <span
+                              >Free call:
+                              <a href="tel:+919966622842" class="phone-link"
+                                ><strong>+91 9966622842</strong></a
+                              ></span
+                            >
+                          </li>
+                        </ul>
+                        <!-- contact info close -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-header-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="header-mainnav">
+                      <div
+                        class="search-cart-box fright"
+                        style="padding: 0px 0px 0px 0px"
+                      >
+                        <div id="site-navigation" class="main-navigation fleft">
+                          <ul id="primary-menu" class="menu main-navigation">
+                            <li id="log">
+                              <a
+                                href="https://app.splashwiseglobalsolutions.com/"
+                                >Login</a
+                              >
+                            </li>
+                            <li id="log">
+                              <a
+                                style="padding-right: 0"
+                                href="https://app.splashwiseglobalsolutions.com/register.php"
+                                >signup</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- <div class="h-cart-btn fright">
+                        <a href="#"
+                          ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+                        ></a>
+                      </div>
+
+                     
+                      <div class="h-search-form-field">
+                        <form
+                          role="search"
+                          method="get"
+                          id="search-form"
+                          class="search-form"
+                          action="#"
+                        >
+                          <input
+                            type="search"
+                            class="search-field"
+                            placeholder="Enter keyword..."
+                            value=""
+                            name="s"
+                          />
+                          <button type="submit" class="search-submit">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>  -->
+                      <div id="site-navigation" class="main-navigation fleft">
+                        <ul
+                          id="primary-menu"
+                          class="menu"
+                          style="display: flex"
+                        >
+                          <li><a href="index.html">Home</a></li>
+                          <li
+                            class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731"
+                          >
+                            <a href="#">Company</a>
+                            <ul class="sub-menu">
+                              <li class="menu-item-1738">
+                                <a href="about.html">About Us</a>
+                              </li>
+                              <li class="menu-item-1745">
+                                <a href="team.html">Our Team</a>
+                              </li>
+                              <!-- <li class="menu-item-1742">
+                              <a href="how-it-work.html">How It Work</a>
+                            </li>
+                            <li class="menu-item-1746">
+                              <a href="testimonials.html">Testimonials</a>
+                            </li>
+                            <li class="menu-item-1757">
+                              <a href="services.html">Services Box</a>
+                            </li>
+                            <li class="menu-item-1744">
+                              <a href="services-icon.html">Icon Box</a>
+                            </li> -->
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789"
+                          >
+                            <a href="services.html">Taxation</a>
+                            <ul class="sub-menu">
+                              <li class="menu-item-1758">
+                                <a href="financial_planning.html"
+                                  >Finacial Planning</a
+                                >
+                              </li>
+                              <li class="menu-item-1790">
+                                <a href="investment_planning.html"
+                                  >Investment Planning</a
+                                >
+                              </li>
+                              <li class="menu-item-1760">
+                                <a href="tax_filing.html">Tax Filing</a>
+                              </li>
+                              <li class="menu-item-1791">
+                                <a href="business_advisor.html"
+                                  >Business Advisor</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- <li class="menu-item-has-children">
+                          <a href="projects.html">Cases Study</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="projects.html">Cases Study 2 Columns</a>
+                            </li>
+                            <li>
+                              <a href="projects-2.html"
+                                >Cases Study 3 Columns</a
+                              >
+                            </li>
+
+                            <li>
+                              <a href="project-detail.html"
+                                >Cases Study Details</a
+                              >
+                            </li>
+                          </ul>
+                        </li> -->
+                          <!-- <li class="menu-item-has-children">
+                          <a href="blog.html">Blog</a>
+                          <ul class="sub-menu">
+                            <li><a href="blog.html">Blog List</a></li>
+                            <li><a href="post.html">Blog Details</a></li>
+                          </ul>
+                        </li> -->
+
+                          <li
+                            class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789"
+                          >
+                            <a href="recruit.html">Recruitment</a>
+                            <ul class="sub-menu">
+                              <li class="menu-item-1758">
+                                <a href="permanent_recruit.html"
+                                  >Permanent Recruitment</a
+                                >
+                              </li>
+                              <li class="menu-item-1790">
+                                <a href="rpo.html">RPO</a>
+                              </li>
+                              <li class="menu-item-1760">
+                                <a
+                                  href="temporary_it_staffing.html
+                                "
+                                  >Temparory &amp; IT Staffing</a
+                                >
+                              </li>
+                              <li class="menu-item-1791">
+                                <a href="executive_search.html"
+                                  >Executive Search</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li><a href="careesrs.html">Careess</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </div>
+                      <!-- #site-navigation -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Main header close -->
+          <div class="header_mobile">
+            <div class="mlogo_wrapper clearfix">
+              <div class="mobile_logo">
+                <a href="#"
+                  ><img
+                    id="image-logo-setting"
+                    src="images/logo_2_org.jpeg "
+                    alt="splashwiseglobalsolutions"
+                /></a>
+              </div>
+              <div id="mmenu_toggle">
+                <button></button>
+              </div>
+            </div>
+            <div class="mmenu_wrapper">
+              <div class="mobile_nav collapse">
+                <ul id="menu-main-menu" class="mobile_mainmenu">
+                  <li
+                    class="current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children"
+                  >
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li
+                    class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731"
+                  >
+                    <a href="#">Company</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item-1738">
+                        <a href="about.html">About Us</a>
+                      </li>
+                      <li class="menu-item-1745">
+                        <a href="team.html">Our Team</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789"
+                  >
+                    <a href="services.html">Taxation</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item-1758">
+                        <a href="financial_planning.html">Finacial Planning</a>
+                      </li>
+                      <li class="menu-item-1790">
+                        <a href="investment_planning.html"
+                          >Investment Planning</a
+                        >
+                      </li>
+                      <li class="menu-item-1760">
+                        <a href="tax_filing.html">Tax Filing</a>
+                      </li>
+                      <li class="menu-item-1791">
+                        <a href="business_advisor.html">Business Advisor</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- <li class="menu-item-has-children">
+                  <a href="blog.html">Blog</a>
+                  <ul class="sub-menu">
+                    <li><a href="blog.html">Blog List</a></li>
+                    <li><a href="post.html">Blog Details</a></li>
+                  </ul>
+                </li> -->
+                  <li
+                    class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789"
+                  >
+                    <a href="recruit.html">Recruitment</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item-1758">
+                        <a href="permanent_recruit.html"
+                          >Permanent Recruitment</a
+                        >
+                      </li>
+                      <li class="menu-item-1790">
+                        <a href="rpo.html">RPO</a>
+                      </li>
+                      <li class="menu-item-1760">
+                        <a href="temporary_it_staffing.html"
+                          >Temparory &amp; IT Staffing</a
+                        >
+                      </li>
+                      <li class="menu-item-1791">
+                        <a href="executive_search.html">Executive Search</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="careesrs.html">Careess</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li>
+                    <a href="https://app.splashwiseglobalsolutions.com/"
+                      >Login</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://app.splashwiseglobalsolutions.com/register.php"
+                      >Signup</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div id="content" class="site-content">
+        <h1>FAQS</h1>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What types of tax services do you offer?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                We provide a comprehensive range of tax services, including
+                strategic tax planning to minimize liabilities, accurate tax
+                filing, IRS audit representation, and thorough evaluations of
+                tax returns to identify errors and maximize potential
+                deductions, ensuring our clients retain more of their
+                hard-earned money.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              How can financial planning benefit me?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Financial planning is essential for achieving your long-term
+                goals. It helps you assess your current financial situation,
+                develop tailored strategies for investments, manage tax
+                liabilities effectively, and prepare for significant life
+                events, such as retirement, education, or purchasing a home,
+                ensuring financial security.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What makes your company different from competitors?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Our company stands out due to our unwavering commitment to
+                quality service, a team of experienced professionals, and a
+                focus on building lasting client relationships. We prioritize
+                trust and reliability, ensuring that we deliver accurate
+                financial solutions tailored to meet the unique needs of each
+                client.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Do you provide 24/7 support?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Yes, we understand that financial matters can arise at any time,
+                which is why we offer 24/7 support. Our dedicated team is always
+                available to assist you with any inquiries or issues related to
+                your financial and tax needs, ensuring you receive timely and
+                effective assistance.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              How do you protect my financial data?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                We prioritize the security of your sensitive financial
+                information by implementing advanced encryption technologies and
+                secure data storage protocols. Our commitment to confidentiality
+                ensures that your data is protected from unauthorized access,
+                and we handle all information with the utmost care and
+                professionalism at all times.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">What if I owe back taxes?</div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                If you owe back taxes, it’s crucial to act quickly. Our
+                experienced team can help you assess your situation, explore
+                available payment options, and develop a comprehensive strategy
+                to address your tax obligations effectively, alleviating the
+                stress and uncertainty associated with back taxes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="site-footer" class="site-footer bg-second">
+        <div class="main-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div id="media_image-1" class="widget widget_media_image">
+                  <a href="index.html"
+                    ><img src="images/logo_2_org.jpeg" alt=""
+                  /></a>
+                </div>
+                <div
+                  id="custom_html-1"
+                  class="widget_text widget widget_custom_html"
+                >
+                  <div class="textwidget custom-html-widget">
+                    <p>
+                      A one-stop entity for all your financial and taxing
+                      solutions, providing expert guidance and tailored services
+                      to meet your unique needs.
+                    </p>
+
+                    <p>
+                      <a href="about.html" class="pagelink gray">About us</a>
+                    </p>
+                    <div class="ot-socials bg-white">
+                      <a
+                        target="_blank"
+                        href="https://www.facebook.com/people/Splashwiseglobalsolutions/100082090772744/#"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-facebook"></i
+                      ></a>
+
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/splashwise-global-solutions-721b82229/"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/splashwiseglobalsolutions/"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end col-lg-3 -->
+
+              <div class="col-md-3 col-sm-6">
+                <section
+                  id="custom_html-2"
+                  class="widget_text widget widget_custom_html padding-left"
+                >
+                  <h4 class="widget-title">Taxation</h4>
+                  <div class="textwidget custom-html-widget">
+                    <ul class="padd-left">
+                      <li>
+                        <a href="financial_planning.html">Finacial Planning</a>
+                      </li>
+                      <li>
+                        <a href="investment_planning.html"
+                          >Investment Planning</a
+                        >
+                      </li>
+                      <li>
+                        <a href="tax_filing.html">Tax Filing</a>
+                      </li>
+                      <li>
+                        <a href="business_advisor.html">Business Advisor</a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+              <!-- end col-lg-3 -->
+
+              <div class="col-md-3 col-sm-6">
+                <section
+                  id="custom_html-2"
+                  class="widget_text widget widget_custom_html padding-left"
+                >
+                  <h4 class="widget-title">Recruitment</h4>
+                  <div class="textwidget custom-html-widget">
+                    <ul class="padd-left">
+                      <li>
+                        <a href="permanent_recruit.html"
+                          >Permanent Recruitment</a
+                        >
+                      </li>
+                      <li>
+                        <a href="rpo.html">RPO</a>
+                      </li>
+                      <li>
+                        <a href="temporary_it_staffing.html"
+                          >Temporary &amp; IT Staffing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="executive_search.html">Executive Search</a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <section
+                  id="custom_html-3"
+                  class="widget_text widget widget_custom_html padding-left"
+                >
+                  <h4 class="widget-title">Company</h4>
+                  <div class="textwidget custom-html-widget">
+                    <ul class="padd-left">
+                      <li><a href="index.html">Home</a></li>
+
+                      <li><a href="services.html">Taxation</a></li>
+                      <li><a href="recruit.html">Recruitment</a></li>
+
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+              <!-- end col-lg-3 -->
+              <!-- <div class="col-md-3 col-sm-6">
+                <section
+                  id="custom_html-3"
+                  class="widget_text widget widget_custom_html padding-left"
+                >
+                  <h4 class="widget-title">Quick Links</h4>
+                  <div class="textwidget custom-html-widget">
+                    <ul class="padd-left">
+                    <li><a href="terms.html">Terms and Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                  </div>
+
+                  
+
+                </section>
+              </div> -->
+
+              <!-- end col-lg-3 -->
+            </div>
+          </div>
+        </div>
+        <!-- .main-footer -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="footer-copyright">
+                  Copyright 2025 © splashwiseglobalsolutions.All rights
+                  reserved.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div>
+                  <ul>
+                    <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="footer-nav text-right mobile-center">
+                  Designed & Devoloped by
+                  <a target="_blank" href="https://www.teksnapp.com/"
+                    >Teksnapp Solutions</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .copyright-footer -->
+        <a id="back-to-top" href="#" class="show"></a>
+        <a
+          id="to-whatsapp"
+          href="https://api.whatsapp.com/send?phone=+919642014242&text=Hello  I am contacting you from your website"
+          target="_blank"
+        ></a>
+      </footer>
+    </div>
+
+    <script>
+      const accordionItemHeaders = document.querySelectorAll(
+        ".accordion-item-header"
+      );
+      accordionItemHeaders.forEach((accordionItemHeader) => {
+        accordionItemHeader.addEventListener("click", (event) => {
+          // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+          const currentlyActiveAccordionItemHeader = document.querySelector(
+            ".accordion-item-header.active"
+          );
+          if (
+            currentlyActiveAccordionItemHeader &&
+            currentlyActiveAccordionItemHeader !== accordionItemHeader
+          ) {
+            currentlyActiveAccordionItemHeader.classList.toggle("active");
+            currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+          }
+
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if (accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight =
+              accordionItemBody.scrollHeight + "px";
+          } else {
+            accordionItemBody.style.maxHeight = 0;
+          }
+        });
+      });
+    </script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/countto.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/royal_preloader.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/header-footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>splashwiseglobalsolutions</title>
+	<link rel="stylesheet" id="bootstrap-css" href="css/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" id="awesome-font-css" href="css/font-awesome.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ionicon-font-css" href="css/ionicon.css" type="text/css" media="all">
+    <link rel="stylesheet" id="royal-preload-css" href="css/royal-preload.css" type="text/css" media="all">
+	<link rel="stylesheet" id="slick-slider-css" href="css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" id="slick-theme-css" href="css/slick-theme.css" type="text/css" media="all">
+	<link rel="stylesheet" id="consultax-style-css" href="style.css" type="text/css" media="all">
+
+	<link rel="shortcut icon" href="favicon.png">
+
+ 
+<style>
+/* Base Styles */
+#privacy-policy-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+ 
+  color: #333;
+}
+
+#privacy-policy-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f26522;
+}
+
+#privacy-policy-header h1 {
+  font-size: 36px;
+  color: #00387a;
+  margin-bottom: 10px;
+}
+
+#last-updated {
+  color: #666;
+  font-style: italic;
+}
+
+/* Section Styling */
+#policy-section-1,
+#policy-section-2,
+#policy-section-3,
+#policy-section-4,
+#policy-section-5 {
+  margin-bottom: 40px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+#section-title-1,
+#section-title-2,
+#section-title-3,
+#section-title-4,
+#section-title-5 {
+  font-size: 24px;
+  color: #00387a;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#section-number-1,
+#section-number-2,
+#section-number-3,
+#section-number-4,
+#section-number-5 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #f26522;
+  color: white;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#subsection-personal-info,
+#subsection-non-personal-info {
+  margin-bottom: 25px;
+}
+
+#subsection-personal-info h3,
+#subsection-non-personal-info h3 {
+  color: #00387a;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+#privacy-list {
+  margin-bottom: 8px;
+  position: relative;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#privacy-list:before {
+  content: "•";
+  color: #f26522;
+  position: absolute;
+  left: 0;
+}
+
+/* Use Cases Grid */
+#use-cases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#use-case-1,
+#use-case-2,
+#use-case-3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+#icon-box-1,
+#icon-box-2,
+#icon-box-3 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(247, 147, 30, 0.1);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Protection Points */
+#protection-points {
+  margin-top: 20px;
+}
+
+#point-1,
+#point-2,
+#point-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.check-icon {
+  color: #f26522;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Rights Grid */
+#rights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#right-card-1,
+#right-card-2,
+#right-card-3 {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#right-card-1:hover,
+#right-card-2:hover,
+#right-card-3:hover {
+  border-color: #f26522;
+  box-shadow: 0 5px 15px rgba(242, 101, 34, 0.1);
+}
+
+#right-card-1 h3,
+#right-card-2 h3,
+#right-card-3 h3 {
+  color: #f26522;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact-section {
+  text-align: center;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+#contact-section h3 {
+  color: #00387a;
+  margin-bottom: 15px;
+}
+
+#contact-section a {
+  color: #f26522;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #privacy-policy-header h1 {
+    font-size: 30px;
+  }
+  
+  #section-title-1,
+  #section-title-2,
+  #section-title-3,
+  #section-title-4,
+  #section-title-5 {
+    font-size: 22px;
+  }
+  
+  #section-number-1,
+  #section-number-2,
+  #section-number-3,
+  #section-number-4,
+  #section-number-5 {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #privacy-policy-container {
+    padding: 0 15px;
+  }
+  
+  #privacy-policy-header h1 {
+    font-size: 26px;
+  }
+  
+  #policy-section-1,
+  #policy-section-2,
+  #policy-section-3,
+  #policy-section-4,
+  #policy-section-5 {
+    padding: 20px 15px;
+  }
+  
+  #use-cases {
+    grid-template-columns: 1fr;
+  }
+  
+  #rights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+
+
+  
+</head>
+  <body class="pre-loader">
+    <div id="page" class="site">
+
+        <header
+        id="site-header"
+        class="site-header mobile-header-blue header-style-1"
+      >
+        <div class="sticky-navbar">
+          <div
+            id="header_topbar"
+            class="header-topbar md-hidden sm-hidden clearfix"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- social icons -->
+                  <ul class="social-list fleft">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.facebook.com/people/Splashwiseglobalsolutions/100082090772744/#"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/splashwise-global-solutions-721b82229/"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/splashwiseglobalsolutions/"
+                        rel="noopener noreferrer"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <!-- social icons close -->
+                  <div class="topbar-text fright">
+                    Opening Hours : Monday to Friday - 8pm to 6:30am
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Top bar close -->
+
+          <!-- Main header start -->
+          <div class="main-header md-hidden sm-hidden">
+            <div class="main-header-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-wrap-table">
+                      <div
+                        style="width: 231px; height: 47px"
+                        id="site-logo"
+                        class="site-logo col-media-left col-media-middle"
+                      >
+                        <a href="index.html">
+                          <img
+                            class="logo-static"
+                            src="images/logo_2_org.jpeg"
+                            alt="SPLASH WISE"
+                          />
+                          <img
+                            class="logo-scroll"
+                            src="images/logo-white.svg"
+                            alt="SPLASH WISE"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-media-body col-media-middle">
+                        <!-- contact info -->
+                        <ul class="info-list info_on_right_side fright">
+                          <li>
+                            <span
+                              >Email us: <br /><a
+                                href="mailto:support@splashwiseglobalsolutions.com"
+                                class="email-link"
+                                ><strong
+                                  >support@splashwiseglobalsolutions.com</strong
+                                ></a
+                              ></span
+                            >
+                          </li>
+                          <li>
+                            <span
+                              >Free call:
+                              <a href="tel:+919966622842" class="phone-link"
+                                ><strong>+91 9966622842</strong></a
+                              ></span
+                            >
+                          </li>
+                        </ul>
+                        <!-- contact info close -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-header-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="header-mainnav">
+                      <div
+                        class="search-cart-box fright"
+                        style="padding: 0px 0px 0px 0px"
+                      >
+                        <div id="site-navigation" class="main-navigation fleft">
+                          <ul id="primary-menu" class="menu main-navigation">
+                            <li id="log">
+                              <a
+                                href="https://app.splashwiseglobalsolutions.com/"
+                                >Login</a
+                              >
+                            </li>
+                            <li id="log">
+                              <a
+                                style="padding-right: 0"
+                                href="https://app.splashwiseglobalsolutions.com/register.php"
+                                >signup</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- <div class="h-cart-btn fright">
+                        <a href="#"
+                          ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+                        ></a>
+                      </div>
+
+                     
+                      <div class="h-search-form-field">
+                        <form
+                          role="search"
+                          method="get"
+                          id="search-form"
+                          class="search-form"
+                          action="#"
+                        >
+                          <input
+                            type="search"
+                            class="search-field"
+                            placeholder="Enter keyword..."
+                            value=""
+                            name="s"
+                          />
+                          <button type="submit" class="search-submit">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>  -->
+                      <div id="site-navigation" class="main-navigation fleft">
+                        <ul
+                          id="primary-menu"
+                          class="menu"
+                          style="display: flex"
+                        >
+                          <li><a href="index.html">Home</a></li>
+                          <li
+                            class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731"
+                          >
+                            <a href="#">Company</a>
+                            <ul class="sub-menu">
+                              <li class="menu-item-1738">
+                                <a href="about.html">About Us</a>
+                              </li>
+                              <li class="menu-item-1745">
+                                <a href="team.html">Our Team</a>
+                              </li>
+                              <!-- <li class="menu-item-1742">
+                              <a href="how-it-work.html">How It Work</a>
+                            </li>
+                            <li class="menu-item-1746">
+                              <a href="testimonials.html">Testimonials</a>
+                            </li>
+                            <li class="menu-item-1757">
+                              <a href="services.html">Services Box</a>
+                            </li>
+                            <li class="menu-item-1744">
+                              <a href="services-icon.html">Icon Box</a>
+                            </li> -->
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789"
+                          >
+                            <a href="services.html">Taxation</a>
+                            <ul class="sub-menu">
+                              <li class="menu-item-1758">
+                                <a href="financial_planning.html"
+                                  >Finacial Planning</a
+                                >
+                              </li>
+                              <li class="menu-item-1790">
+                                <a href="investment_planning.html"
+                                  >Investment Planning</a
+                                >
+                              </li>
+                              <li class="menu-item-1760">
+                                <a href="tax_filing.html">Tax Filing</a>
+                              </li>
+                              <li class="menu-item-1791">
+                                <a href="business_advisor.html"
+                                  >Business Advisor</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- <li class="menu-item-has-children">
+                          <a href="projects.html">Cases Study</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="projects.html">Cases Study 2 Columns</a>
+                            </li>
+                            <li>
+                              <a href="projects-2.html"
+                                >Cases Study 3 Columns</a
+                              >
+                            </li>
+
+                            <li>
+                              <a href="project-detail.html"
+                                >Cases Study Details</a
+                              >
+                            </li>
+                          </ul>
+                        </li> -->
+                          <!-- <li class="menu-item-has-children">
+                          <a href="blog.html">Blog</a>
+                          <ul class="sub-menu">
+                            <li><a href="blog.html">Blog List</a></li>
+                            <li><a href="post.html">Blog Details</a></li>
+                          </ul>
+                        </li> -->
+
+                          <li
+                            class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789"
+                          >
+                            <a href="recruit.html">Recruitment</a>
+                            <ul class="sub-menu">
+                              <li class="menu-item-1758">
+                                <a href="permanent_recruit.html"
+                                  >Permanent Recruitment</a
+                                >
+                              </li>
+                              <li class="menu-item-1790">
+                                <a href="rpo.html">RPO</a>
+                              </li>
+                              <li class="menu-item-1760">
+                                <a
+                                  href="temporary_it_staffing.html
+                                "
+                                  >Temparory &amp; IT Staffing</a
+                                >
+                              </li>
+                              <li class="menu-item-1791">
+                                <a href="executive_search.html"
+                                  >Executive Search</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li><a href="careesrs.html">Careess</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </div>
+                      <!-- #site-navigation -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Main header close -->
+          <div class="header_mobile">
+            <div class="mlogo_wrapper clearfix">
+              <div class="mobile_logo">
+                <a href="#"
+                  ><img
+                    id="image-logo-setting"
+                    src="images/logo_2_org.jpeg "
+                    alt="splashwiseglobalsolutions"
+                /></a>
+              </div>
+              <div id="mmenu_toggle">
+                <button></button>
+              </div>
+            </div>
+            <div class="mmenu_wrapper">
+              <div class="mobile_nav collapse">
+                <ul id="menu-main-menu" class="mobile_mainmenu">
+                  <li
+                    class="current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children"
+                  >
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li
+                    class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731"
+                  >
+                    <a href="#">Company</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item-1738">
+                        <a href="about.html">About Us</a>
+                      </li>
+                      <li class="menu-item-1745">
+                        <a href="team.html">Our Team</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789"
+                  >
+                    <a href="services.html">Taxation</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item-1758">
+                        <a href="financial_planning.html">Finacial Planning</a>
+                      </li>
+                      <li class="menu-item-1790">
+                        <a href="investment_planning.html"
+                          >Investment Planning</a
+                        >
+                      </li>
+                      <li class="menu-item-1760">
+                        <a href="tax_filing.html">Tax Filing</a>
+                      </li>
+                      <li class="menu-item-1791">
+                        <a href="business_advisor.html">Business Advisor</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- <li class="menu-item-has-children">
+                  <a href="blog.html">Blog</a>
+                  <ul class="sub-menu">
+                    <li><a href="blog.html">Blog List</a></li>
+                    <li><a href="post.html">Blog Details</a></li>
+                  </ul>
+                </li> -->
+                  <li
+                    class="menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1789"
+                  >
+                    <a href="recruit.html">Recruitment</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item-1758">
+                        <a href="permanent_recruit.html"
+                          >Permanent Recruitment</a
+                        >
+                      </li>
+                      <li class="menu-item-1790">
+                        <a href="rpo.html">RPO</a>
+                      </li>
+                      <li class="menu-item-1760">
+                        <a href="temporary_it_staffing.html"
+                          >Temparory &amp; IT Staffing</a
+                        >
+                      </li>
+                      <li class="menu-item-1791">
+                        <a href="executive_search.html">Executive Search</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="careesrs.html">Careess</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li>
+                    <a href="https://app.splashwiseglobalsolutions.com/"
+                      >Login</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://app.splashwiseglobalsolutions.com/register.php"
+                      >Signup</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+       <div id="content" class="site-content">
+
+        <section>
+        
+          <div id="privacy-policy-container">
+  <div id="privacy-policy-header">
+    <h1>Privacy Policy</h1>
+    <p id="last-updated">Last updated: [Insert Date]</p>
+  </div>
+
+  <div id="privacy-policy-content">
+    <section id="policy-section-1">
+      <h2 id="section-title-1"><span id="section-number-1">1</span> Introduction</h2>
+      <p>Splashwise Global Solutions ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+    </section>
+
+    <section id="policy-section-2">
+      <h2 id="section-title-2"><span id="section-number-2">2</span> Information Collection</h2>
+      <div id="subsection-personal-info">
+        <h3>Personal Information</h3>
+        <p>We may collect personally identifiable information such as your name, email address, and phone number when you:</p>
+        <ul>
+          <li id="privacy-list" >Submit contact forms</li>
+          <li id="privacy-list" >Register for an account</li>
+          <li id="privacy-list" >Subscribe to newsletters</li>
+        </ul>
+      </div>
+      
+      <div id="subsection-non-personal-info">
+        <h3>Non-Personal Information</h3>
+        <p>We automatically collect certain data including:</p>
+        <ul>
+          <li id="privacy-list" >Browser type and version</li>
+          <li id="privacy-list" >Pages visited</li>
+          <li id="privacy-list" >Time spent on site</li>
+          <li id="privacy-list" >Referring website</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="policy-section-3">
+      <h2 id="section-title-3"><span id="section-number-3">3</span> Use of Information</h2>
+      <p>We use collected information to:</p>
+      <div id="use-cases">
+        <div id="use-case-1">
+          <div id="icon-box-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#00387a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 8V12V8ZM12 12V16H16H12Z" stroke="#00387a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p>Improve our website and services</p>
+        </div>
+        
+        <div id="use-case-2">
+          <div id="icon-box-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#00387a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 6L12 13L2 6" stroke="#00387a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p>Respond to inquiries and requests</p>
+        </div>
+        
+        <div id="use-case-3">
+          <div id="icon-box-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#00387a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 8V16V8ZM8 8V16V8ZM12 8V16V8Z" stroke="#00387a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p>Analyze usage patterns</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="policy-section-4">
+      <h2 id="section-title-4"><span id="section-number-4">4</span> Data Protection</h2>
+      <p>We implement security measures to protect your information:</p>
+      <div id="protection-points">
+        <div id="point-1">
+          <span class="check-icon">✓</span>
+          <p>SSL encryption for data transmission</p>
+        </div>
+        <div id="point-2">
+          <span class="check-icon">✓</span>
+          <p>Regular security audits</p>
+        </div>
+        <div id="point-3">
+          <span class="check-icon">✓</span>
+          <p>Limited access to personal data</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="policy-section-5">
+      <h2 id="section-title-5"><span id="section-number-5">5</span> Your Rights</h2>
+      <p>You have the right to:</p>
+      <div id="rights-grid">
+        <div id="right-card-1">
+          <h3>Access</h3>
+          <p>Request copies of your personal data</p>
+        </div>
+        <div id="right-card-2">
+          <h3>Correction</h3>
+          <p>Request correction of inaccurate data</p>
+        </div>
+        <div id="right-card-3">
+          <h3>Deletion</h3>
+          <p>Request deletion of your data</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact-section">
+      <h3>Contact Us</h3>
+      <p>For privacy-related inquiries, please contact us at <a href="mailto:privacy@splashwise.com">privacy@splashwise.com</a></p>
+    </div>
+  </div>
+</div>
+
+        </section>
+
+      
+
+        </div>
+
+      
+    
+       <footer id="site-footer" class="site-footer bg-second">
+        <div class="main-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div id="media_image-1" class="widget widget_media_image">
+                  <a href="index.html"
+                    ><img src="images/logo_2_org.jpeg" alt=""
+                  /></a>
+                </div>
+                <div
+                  id="custom_html-1"
+                  class="widget_text widget widget_custom_html"
+                >
+                  <div class="textwidget custom-html-widget">
+                    <p>
+                      A one-stop entity for all your financial and taxing solutions, providing expert guidance and tailored services to meet your unique needs.
+                    </p>
+
+                    <p>
+                      <a href="about.html" class="pagelink gray">About us</a>
+                    </p>
+                    <div class="ot-socials bg-white">
+                      
+                      <a target="_blank" href="https://www.facebook.com/people/Splashwiseglobalsolutions/100082090772744/#" rel="noopener noreferrer"
+                        ><i class="fa fa-facebook"></i
+                      ></a>
+                     
+                      <a target="_blank" href="https://www.linkedin.com/in/splashwise-global-solutions-721b82229/" rel="noopener noreferrer"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+
+                      <a target="_blank" href="https://www.instagram.com/splashwiseglobalsolutions/" rel="noopener noreferrer"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end col-lg-3 -->
+
+              <div class="col-md-3 col-sm-6">
+                <section
+                  id="custom_html-2"
+                  class="widget_text widget widget_custom_html padding-left"
+                >
+                  <h4 class="widget-title">Taxation</h4>
+                  <div class="textwidget custom-html-widget">
+                    <ul class="padd-left">
+                      <li>
+                        <a href="financial_planning.html">Finacial Planning</a>
+                      </li>
+                      <li>
+                        <a href="investment_planning.html">Investment Planning</a>
+                      </li>
+                      <li>
+                        <a href="tax_filing.html">Tax Filing</a>
+                      </li>
+                      <li>
+                        <a href="business_advisor.html">Business Advisor</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </section>
+              </div>
+              <!-- end col-lg-3 -->
+
+
+               <div class="col-md-3 col-sm-6">
+                <section
+                  id="custom_html-2"
+                  class="widget_text widget widget_custom_html padding-left"
+                >
+                  <h4 class="widget-title">Recruitment</h4>
+                  <div class="textwidget custom-html-widget">
+                    <ul class="padd-left">
+                      <li>
+                        <a href="permanent_recruit.html">Permanent Recruitment</a>
+                      </li>
+                      <li>
+                        <a href="rpo.html">RPO</a>
+                      </li>
+                      <li>
+                        <a href="temporary_it_staffing.html">Temporary &amp; IT Staffing</a>
+                      </li>
+                      <li>
+                        <a href="executive_search.html">Executive Search</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </section>
+              </div>
+
+
+              <div class="col-md-3 col-sm-6">
+                <section
+                  id="custom_html-3"
+                  class="widget_text widget widget_custom_html padding-left"
+                >
+                  <h4 class="widget-title">Company</h4>
+                  <div class="textwidget custom-html-widget">
+                    <ul class="padd-left">
+                      <li><a href="index.html">Home</a></li>
+                      
+                      <li><a href="services.html">Taxation</a></li>
+                      <li><a href="recruit.html">Recruitment</a></li>
+                    
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+
+                  
+
+                </section>
+              </div>
+              <!-- end col-lg-3 -->
+              <!-- <div class="col-md-3 col-sm-6">
+                <section
+                  id="custom_html-3"
+                  class="widget_text widget widget_custom_html padding-left"
+                >
+                  <h4 class="widget-title">Quick Links</h4>
+                  <div class="textwidget custom-html-widget">
+                    <ul class="padd-left">
+                    <li><a href="terms.html">Terms and Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                  </div>
+
+                  
+
+                </section>
+              </div> -->
+              
+              <!-- end col-lg-3 -->
+            </div>
+          </div>
+        </div>
+        <!-- .main-footer -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-md-4">
+                <div class="footer-copyright">
+                 Copyright 2025 © splashwiseglobalsolutions.All rights reserved.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div>
+                  <ul >
+                    <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                  </ul> 
+                </div>
+
+              </div>
+                 
+               <div class="col-md-4">
+                <div class="footer-nav text-right mobile-center">
+                    Designed & Devoloped by <a target="_blank" href="https://www.teksnapp.com/">Teksnapp Solutions</a>
+                   
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <!-- .copyright-footer -->
+        <a id="back-to-top" href="#" class="show"></a>
+        <a id="to-whatsapp" href="https://api.whatsapp.com/send?phone=+919642014242&text=Hello  I am contacting you from your website" target="_blank"></a>
+                    
+      </footer>
+
+      </div>
+
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+	<script type='text/javascript' src='js/countto.min.js'></script>
+	<script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+	<script type='text/javascript' src='js/royal_preloader.min.js'></script>
+	<script type='text/javascript' src='js/slick.min.js'></script>
+	<script type='text/javascript' src='js/scripts.js'></script>
+	<script type='text/javascript' src='js/header-footer.js'></script>
+  </body>
+    </body>
+</html>

@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open Sans:400,400i,600,600i,700,700i&display=swap");
+
+/* Global Styles */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Links */
+a {
+  background-color: transparent;
+  color: #00387a;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  color: #f26522;
+}
+
+/* Menu Styles */
+#primary-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#primary-menu li {
+  position: relative;
+}
+
+#primary-menu a {
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Header Styles */
+.header-topbar {
+  background: #002c60;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0px 8px;
+}
+
+.site-header {
+  background: #00387a;
+  position: relative;
+  z-index: 99;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease 0s;
+}
+
+.main-navigation ul {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.main-navigation > ul > li {
+  float: left;
+  display: inline-block;
+  position: relative;
+}
+
+.main-navigation ul > li > a {
+  padding: 25px 20px;
+  line-height: 35px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+
+/* Footer Styles */
+.site-footer {
+  background: #00387a;
+  color: #fff;
+}
+
+.main-footer {
+  padding: 120px 0 80px;
+}
+
+.main-footer h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.footer-bottom {
+  background: #002c60;
+  padding: 18px 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .header_mobile {
+    display: block;
+  }
+
+  .mobile_nav {
+    display: none;
+    background: #fff;
+    border-top: 1px solid #dadada;
+  }
+
+  .mobile_mainmenu li a {
+    padding: 11px 15px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-bottom ul li {
+    margin: 0 10px;
+  }
+}
+
+/* faq */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+* {
+  font-family: Lato, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.wrapper {
+  width: 60%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
+  margin: 20px 0;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+}
+
+.question.active::after {
+  transform: rotate(45deg);
+}
+
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+}
+
+.question.active + .answercont {
+}
+
+@media screen and (max-width: 790px) {
+  html {
+    font-size: 14px;
+  }
+  .wrapper {
+    width: 80%;
+  }
+}
