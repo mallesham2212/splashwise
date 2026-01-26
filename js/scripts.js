@@ -495,6 +495,14 @@ window.addEventListener("scroll", function () {
   var whatsappButton = document.getElementById("to-whatsapp");
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
+  var content = this.document.getElementById("content")
+
+  if (scrollPosition > 40) {
+    content.style.paddingTop = "0px";
+  } else {
+    content.style.paddingTop = "110px";
+  }
+
   // Show button after scrolling 300px down
   if (scrollPosition > 500) {
     whatsappButton.classList.add("show");
