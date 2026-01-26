@@ -1,17 +1,7 @@
 (function ($) {
   "use strict";
 
-  //Preloader
-  Royal_Preloader.config({
-    mode: "logo",
-    logo: "images/preloader-splashwise.jpeg",
-    //
-    logo_size: [187, 40],
-    showProgress: true,
-    showPercentage: true,
-    text_colour: "#0a0f2b",
-    background: "#fff",
-  });
+ 
 
   //Project Filter
   $(window).on("load", function () {
@@ -40,29 +30,6 @@
   });
 
   //Counter
-  var v_count = "0";
-  $(window).on("scroll", function () {
-    $(".fun-facts .number").each(function () {
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow + 800 && v_count == "0") {
-        $(function ($) {
-          // start all the timers
-          $(".fun-facts .number").each(count);
-          function count(options) {
-            v_count = "1";
-            var $this = $(this);
-            options = $.extend(
-              {},
-              options || {},
-              $this.data("countToOptions") || {}
-            );
-            $this.countTo(options);
-          }
-        });
-      }
-    });
-  });
 
   //Images Carousel
   $(".image-carousel").each(function () {
