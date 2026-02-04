@@ -496,12 +496,12 @@ window.addEventListener("scroll", function () {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   var content = this.document.getElementById("content")
+if (scrollPosition > 40) {
+  content.style.setProperty("margin-top", "-30px", "important");
+} else {
+  content.style.setProperty("margin-top", "100px", "important");
+}
 
-  if (scrollPosition > 40) {
-    content.style.paddingTop = "0px";
-  } else {
-    content.style.paddingTop = "110px";
-  }
 
   // Show button after scrolling 300px down
   if (scrollPosition > 500) {

@@ -87,6 +87,13 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
+.free-call{
+  display: flex;
+  flex-direction: row !important;
+  gap: 10px;
+}
+
+
 a {
   background-color: transparent;
 }
